@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "基于react开发的项目",
+  "author": "ljk",
   "scripts": {
     "dev": "cross-env T_EVN=development vite",
     "build": "vue-tsc && vite build",
