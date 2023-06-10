@@ -9,8 +9,14 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Count: typeof import('./src/components/count.vue')['default']
+    Description: typeof import('./src/components/description.vue')['default']
+    Drag: typeof import('./src/components/drag.vue')['default']
+    ErrorPage: typeof import('./src/components/errorPage.vue')['default']
+    Form: typeof import('./src/components/form.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Table: typeof import('./src/components/table.vue')['default']
     UseMouse: typeof import('./src/components/useMouse.vue')['default']
     UsePinia: typeof import('./src/components/usePinia.vue')['default']
   }

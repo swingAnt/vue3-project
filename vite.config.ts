@@ -5,7 +5,15 @@ import Components from 'unplugin-vue-components/vite';
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 // https://vitejs.dev/config/
 export default defineConfig({
-
+    css: {
+        preprocessorOptions: {
+          scss: {
+            // 两种方式都可以
+            // additionalData: '@import "@/assets/scss/global.scss";'
+            // additionalData: '@use "@/assets/scss/global.scss" as *;'
+          }
+        }
+      },
     resolve: {
         //设置别名
         alias: {

@@ -21,7 +21,7 @@ import API from '@/api';
 
  const userStore = useUserStore()
 export default defineComponent({
-  name: "List",
+  name: "Pinia",
   components: {},
   props: {
     show: {
@@ -51,10 +51,6 @@ export default defineComponent({
 
         let result = await API.getUserInfo();
         console.log('result--------',result)
-        API.getUserInfo();
-        API.getUserInfo();
-        API.getUserInfo();
-
         userStore.updateName(result.data.userName)
     });
 
