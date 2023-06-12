@@ -101,7 +101,7 @@ class Request {
                     ElMessage.error("网络连接失败，请检查网络");
                     // 可以重定向至404页面
                 }
-                return Promise.reject(error)
+                // return Promise.reject(error)
             }
  
         )
