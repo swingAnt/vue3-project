@@ -4,7 +4,7 @@
       <el-aside class="aside">
         <div class="logoBox">
         <div class="logo">
-          <el-image class="img" :src="logo" :fit="fit" />
+          <img class="img" :src="logo" />
           XXX系统
         </div>
         </div>
@@ -38,7 +38,7 @@
         <el-header style="padding:0px">       <div className="header">
                 
                 <div className="avator">
-                  <img class="img" :src="avator" :fit="fit" />
+                  <img class="img" :src="avator" />
                  张三
             </div>
             </div></el-header>

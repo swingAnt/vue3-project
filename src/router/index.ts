@@ -59,7 +59,7 @@ const routes: Array<RouteRecordRaw> = [
             keepAlive: true,
             requireAuth: true
         },
-        component: () => import('@/components/pinia.vue')
+        component: () => import('@/components/usePinia.vue')
     },
     {
         path: '/count',
