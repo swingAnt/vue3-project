@@ -14,7 +14,11 @@
       </div>
       <div class="es-info-item">
         <span>scaleRatio</span>
-        <input :value="scale" @change="handleScaleChange">
+        <input :value="scale" @change="change">
+      </div>
+      <div class="es-info-item">
+        <div @:click="change" >更新名称</div>
+
       </div>
     </div>
     <div
@@ -30,9 +34,9 @@
     v-bind="item"
     :style="{ color: item.color }"
     :snapToGrid="snapToGrid"
-
     :scaleRatio="scale"
-        boundary
+    :om="snapToGrid"
+    @change="change"
   >
     {{ item.text }}
   </Drager>
@@ -59,13 +63,19 @@
   { text: '移动', resizable: false },
   { color: '#00c48f', text: '移动+缩放' },
   { color: '#ff9f00', text: '旋转', rotatable: true, resizable: false },
-  { color: '#f44336', text: '旋转+缩放', rotatable: true }
+  { color: '#f44336', text: '旋转+缩放', rotatable: true,
+  width:200,
+  height:200,
+  left:200,
+  top:400, }
 ])
 
   function handleScaleChange(e: Event) {
     scale.value = +(e.target! as HTMLInputElement).value
   }
-  
+  function change(e:any){
+    console.log('e',e);
+  }
   </script>
   
   <style lang='scss' scoped>
