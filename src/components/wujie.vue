@@ -7,6 +7,5 @@
 ></WujieVue>
 </template>
 <script lang="ts" setup>
-import WujieVue from "wujie-vue3";
   </script>
   

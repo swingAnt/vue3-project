@@ -18,5 +18,6 @@ declare module '@vue/runtime-core' {
     Table: typeof import('./src/components/table.vue')['default']
     UseMouse: typeof import('./src/components/useMouse.vue')['default']
     UsePinia: typeof import('./src/components/usePinia.vue')['default']
+    Wujie: typeof import('./src/components/wujie.vue')['default']
   }
 }
